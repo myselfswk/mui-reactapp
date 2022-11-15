@@ -13,6 +13,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Avatar from '@mui/material/Avatar';
+
+import MyAvatar from '../assets/images/MyAvatar.jpg'
 
 const drawerWidth = 240;
 //Navbar Names
@@ -57,6 +60,9 @@ function AppNavbar(props) {
                     <ListItemButton sx={{ textAlign: 'center' }} href='/contact'>
                         <ListItemText primary='Contact Us' />
                     </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <Avatar alt="Remy Sharp" src={MyAvatar} />
                 </ListItem>
             </List>
         </Box>
